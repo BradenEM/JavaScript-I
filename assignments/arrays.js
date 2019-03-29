@@ -92,8 +92,8 @@ console.log(lastCar);
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names
 //  into alphabetical order and log the results in the console
-// let carModels = [];
-// console.log();
+let carModels = [];
+
 function compare(a, b) {
   const modelA = a.car_model.toUpperCase();
   const modelB = b.car_model.toUpperCase();
@@ -106,8 +106,8 @@ function compare(a, b) {
   }
   return comparison;
 }
-
-console.log(inventory.sort(compare));
+carModels.push(inventory.sort(compare));
+console.log(carModels);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data
